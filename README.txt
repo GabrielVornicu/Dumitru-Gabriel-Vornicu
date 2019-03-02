@@ -1,1 +1,0 @@
-Java Code - read a text from console and output in a file.
