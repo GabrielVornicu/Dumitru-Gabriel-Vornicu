@@ -1,0 +1,23 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class Dumitru_Gabriel_Vornicu {
+	public static void main(String[] args) {
+		System.out.println("Enter yout text : ");
+		Scanner scan = new Scanner(System.in); 
+		String text = scan.nextLine(); 
+		scan.close();
+		String filename = "output.txt";
+		try {
+			PrintWriter outputText = new PrintWriter(filename);
+			outputText.println("Your text is : " + text);
+			System.out.println("Done.");
+			outputText.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+}
